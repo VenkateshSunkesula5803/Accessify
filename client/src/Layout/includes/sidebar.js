@@ -1,5 +1,3 @@
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Outlet, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 export default function Sidebar() {
@@ -28,7 +26,7 @@ export default function Sidebar() {
       <div class="menu-inner-shadow"></div>
 
       <ul class="menu-inner py-1">
-     
+        {/* <!-- Dashboard --> */}
         <li class="menu-item active">
         <Link class="menu-link menu-toggle" to="/dashboard"> 
             <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -84,70 +82,27 @@ export default function Sidebar() {
                 <div data-i18n="Register Vendor">Users</div>
             </Link>
             </li>
-
+            <li class="menu-item">
+            <Link class="menu-link " to="/create"> 
+                <div data-i18n="Register Vendor">Mcq Question create</div>
+            </Link>
+            </li>
+            <li class="menu-item">
+            <Link class="menu-link " to="/view"> 
+                <div data-i18n="Register Vendor">Mcq view</div>
+            </Link>
+            </li>
+            <li class="menu-item">
+            <Link class="menu-link " to="/upload"> 
+                <div data-i18n="Register Vendor">Mcq Upload</div>
+            </Link>
+            </li>
             <li class="menu-item">
               <a href="#" class="menu-link">
                 <div data-i18n="Manage Vendor">Manage Institution</div>
               </a>
             </li>
-        <li class="menu-item">
-          <a class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bx-detail"></i>
-            <div data-i18n="Form Elements">QUESTION BANK</div>
-          </a>
-         
-            <li class="menu-item">
-            <Link class="menu-link " to="/Subjects"> 
-                <div data-i18n="QuestionBank/subjects.js">Subjects</div>
-            </Link>
-
-         </li>
-         <li class="menu-item">
-            <Link class="menu-link " to="/PCreate"> 
-                <div data-i18n="QuestionBank/pcreate.js">Paragraph MCQ Create</div>
-            </Link>
-           </li>
-           <li class="menu-item">
-            <Link class="menu-link " to="/Pview"> 
-                <div data-i18n="QuestionBank/pview.js">Paragraph MCQ View</div>
-            </Link>
-           </li>
-           <li class="menu-item">
-            <Link class="menu-link " to="/Createcodingques"> 
-                <div data-i18n="QuestionBank/createcodingques.js">Create Coding Questions</div>
-            </Link>
-           </li>
-           <li class="menu-item">
-            <Link class="menu-link " to="/Viewcodingques"> 
-                <div data-i18n="QuestionBank/viewcodingques.js">View Coding Questions</div>
-            </Link>
-           </li>
-
-            </li>
-            <li class="menu-item">
-            <Link class="menu-link " to="/chapters"> 
-                <div data-i18n="QuestionBank/chapters.js">Chapters</div>
-            </Link>
-            </li>
-
-
-        </li>
-        <li class="menu-item">
-          <a class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bx-detail"></i>
-            <div data-i18n="Form Elements">ASSESSMENTS</div>
-          </a>
-         
-            <li class="menu-item">
-            <Link class="menu-link " to="/catergories"> 
-                <div data-i18n="Assessments/catergories.js">Categories</div>
-            </Link>
-            </li>
-            <li class="menu-item">
-            <Link class="menu-link " to="/assessments"> 
-                <div data-i18n="Assessments/assessments.js">Assessments</div>
-            </Link>
-            </li>
+          
         </li>
         <li class="menu-header small text-uppercase">
           <span class="menu-header-text">Vendor Utils</span>
